@@ -1,44 +1,45 @@
-:root {
-    --primary-color: steelblue;       /* Main color for elements like nav and h1 */
-    --secondary-color: white;         /* Text color in nav */
-    --shadow-color: gray;             /* Color for shadows */
-    --base-padding: 10px;             /* Base padding for nav */
-    --large-padding: 20px;            /* Padding for the second nav block */
-    --image-size: 150px;              /* Standard size for images */
-    --aside-image-size: 200px;        /* Size for images in aside */
-    --aside-margin: 1em;              /* Margin for aside */
-    --border-color: rgba(0, 0, 0, 0.2); /* Border color for aside */
-    --aside-background-color: #eee;   /* Background color for aside */
-    --aside-text-color: #333;         /* Text color in aside */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Reboto, Arial, sans-serif;
 }
-    
-    
+
 nav {
-    background-color: var(--primary-color);
+    background-color: steelblue;
     padding: 10px;
 }
 
 nav {
-    color: var(--secondary-color);
+    color: white;
     display: block;
-    padding: var(--large-padding);
+    padding: 20px;
 }
 
 h1 {
-    color: var(--primary-color);
+    color: steelblue;
+    padding: 5rem;
 
 }
 
 main img {
-    width: var(--image-size);
+    width: 150px;
     height: auto;
-    border: 1px solid var(--primary-color);
+    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
+    box-shadow: 0 0 30px  gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 
 
+
+}
+p {
+    margin: 1rem;
 }
 
 p {
@@ -48,11 +49,11 @@ p {
 
 
 img {
-    width: var(--image-size);
+    width: 150px;
     height: auto;
-    border: 1px solid var(--primary-color);
+    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
+    box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -62,18 +63,22 @@ p {
 
 aside {
     width:20em;
-    margin: var(--aside-margin);
-    border: 1px solid var(--border-color); /* 1 */
-    padding: 1rem;
-    background-color: var(--aside-background-color);
-    color: var(--aside-text-color);
     text-align: center;
+    position: relative;
 
 }
 
 aside img {
-    width: var(--aside-image-size);
+    width: 200px;
     height: auto;
+
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+
 
 }
 
@@ -82,3 +87,15 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+.indent {
+    margin-left: 1rem;
+} 
